@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #ecf0f1;
+}
+
+.level {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.level button {
+    padding: 3px 12px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1abc9c;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+}
+
+.level .active {
+    background-color: #3498db;
+}
+
+.game-box {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #d9d9d9;
+}
+
+.game-box div {
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #ccc;
+    border: 2px solid;
+    border-color: #fff #a1a1a1 #a1a1a1 #fff;
+    background-size: 100% 100%;
+    user-select: none;
+}
+
+.game-box .flag {
+    background-image: url(2.jpg);
+}
+
+.game-box .mine {
+    background-image: url(3.jpg);
+}
+
+.info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.game-box .number {
+    border: 1px solid;
+    border-color: #ccc;
+    background: #d9d9d9;
+}
+
+.game-box .one {
+    color: #0332fe;
+}
+
+.game-box .two {
+    color: #019f02;
+}
+
+.game-box .three {
+    color: #ff2600;
+}
+
+.game-box .four {
+    color: #93208f;
+}
+
+.game-box .five {
+    color: #ff7f29;
+}
+
+.game-box .six {
+    color: #ff3fff;
+}
+
+.game-box .seven {
+    color: #3fffbf;
+}
+
+.game-box .eight {
+    color: #22ee0f;
+}
