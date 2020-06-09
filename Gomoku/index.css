@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.chess {
+    position: relative;
+    margin: 50px auto 0;
+    width: 660px;
+    height: 660px;
+    background-color: #F9CC9D;
+    box-shadow: 0 0 10px 1px #ccc;
+}
+
+.chess div {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.chess .end:hover {
+    background-color: #F9CC9D;
+    outline: 1px red dashed;
+}
+
+.chess .end:hover::before,
+.chess .end:hover::after {
+    display: none;
+}
+
+.chess .hid::before,
+.chess .hid::after {
+    display: none;
+}
+
+.chess div::before,
+.chess div::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    transform: translateY(calc(15px - 50%));
+    height: 1px;
+    width: 30px;
+}
+
+.chess div::after {
+    transform: translateX(calc(15px - 50%));
+    height: 30px;
+    width: 1px;
+}
+
+.chess div:nth-of-type(20n+1)::before {
+    transform: translateY(calc(15px - 50%)) translateX(15px);
+    width: 15px;
+}
+
+.chess div:nth-of-type(20n)::before {
+    width: 15px;
+}
+
+.chess div:nth-of-type(-n+20)::after {
+    transform: translateX(calc(15px - 50%)) translateY(15px);
+    height: 15px;
+}
+
+.chess div:nth-last-of-type(-n+20)::after {
+    height: 15px;
+}
+
+.reset {
+    position: fixed;
+    left: 130px;
+    top: 100px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 5px;
+}
+
+.reset:hover {
+    background-color: salmon;
+    color: white;
+}
